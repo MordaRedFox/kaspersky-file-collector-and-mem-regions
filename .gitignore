@@ -1,0 +1,269 @@
+# ОС и мусор файловой системы
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+ehthumbs_vista.db
+Thumbs.db
+Thumbs.db:encryptable
+desktop.ini
+$RECYCLE.BIN/
+*.lnk
+*.stackdump
+
+
+# Visual Studio / VS Code
+.vs/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/c_cpp_properties.json
+*.code-workspace
+# JetBrains (CLion, ReSharper C++)
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+# Vim / Neovim
+*.swp
+*.swo
+*.swn
+*~
+.*.sw?
+Session.vim
+.netrwhist
+# Emacs
+*~
+\#*\#
+.\#*
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+
+# CMake
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps/
+build/
+Build/
+BUILD/
+out/
+Out/
+cmake-build-*/
+CMakeUserPresets.json
+*.cmake.stamp
+Testing/
+Testing/*
+
+
+# FetchContent (GoogleTest и др.)
+_deps/
+lib/
+bin/
+share/
+
+
+# Visual Studio - проектные и бинарные артефакты
+*.sln
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.vcproj
+*.vcproj.*.user
+*.ncb
+*.sdf
+*.opensdf
+*.ipch
+*.dbmdl
+*.dbproj.schemaview
+*.publishproj
+*.VC.db
+*.VC.VC.opendb
+# Общие папки сборки MSVC
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Xx]64/
+[Xx]86/
+[Ww]in32/
+[Ww]in64/
+ARM/
+ARM64/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+[Oo]ut/
+[Oo]utput/
+
+
+# Скомпилированные артефакты (общее для C/C++)
+*.o
+*.obj
+*.lo
+*.la
+*.a
+*.lib
+*.so
+*.so.*
+*.dylib
+*.dll
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+*.elf
+*.gch
+*.pch
+*.pdb
+*.ipdb
+*.iobj
+*.ilk
+*.exp
+*.map
+*.idb
+*.res
+*.tlb
+*.tli
+*.tlh
+*.cache
+# Отладочные символы
+*.sym
+*.dbg
+*.debug
+# Препроцессированные файлы
+*.i
+*.ii
+# Зависимости компилятора
+*.d
+*.d.*
+
+
+# Инструменты анализа и сборки (clang, gcc, sanitizers, coverage)
+*.gcno
+*.gcda
+*.gcov
+*.lcov
+coverage/
+.coverage
+.coverage.*
+htmlcov/
+*.profraw
+*.profdata
+llvm-cov/
+.clangd/
+.cache/
+cppcheck/
+*.plist
+
+
+# Тестовые артефакты
+*.log
+*.trx
+*.test
+Testing/Temporary/
+test-results/
+test_reports/
+*.xml
+!**/vcxproj.xml
+gtest_output.xml
+gtest-results/
+*.tap
+
+
+# Пакетные менеджеры C++
+# Conan
+conan.lock
+conanbuildinfo.*
+conaninfo.txt
+graph_info.json
+.conan/
+conan/
+# vcpkg
+vcpkg_installed/
+.vcpkg/
+vcpkg/
+# Hunter
+_hunter/
+hunter/
+
+
+# Секреты и локальные настройки
+.env
+.env.*
+!.env.example
+secrets.*
+.local/
+
+
+# Специфика проекта «Группа поведенческого детектирования» (WinAPI)
+
+
+# Отладочные символы MSVC
+*.pdb
+*.ilk
+*.exp
+*.lib
+# MSVC-специфичные отчеты
+*.iobj
+*.ipdb
+# Дампы памяти целевых процессов
+dump_*.bin
+dump_*.dmp
+proc_*.bin
+proc_*.dmp
+process_*.bin
+snapshot_*.bin
+# Отчеты о регионах памяти
+regions_*.txt
+regions_*.log
+memory_map_*.txt
+memory_map_*.log
+mem_*.csv
+regions_*.csv
+regions_*.json
+# Скрипты-обертки и локальные конфиги для запуска
+run_local.bat
+run_local.ps1
+*.local.bat
+*.local.ps1
+*.local.cmd
+# Артефакты отладки WinDbg / Visual Studio
+*.wew
+*.vsz
+*.vsp
+*.vspscc
+*.psess
+*.ncb
+*.sdf
+WinDbg/
+windbg/
+*.dmp
+*.dump
+# Временные файлы Resource Compiler
+*.aps
+*.res
+Resource.h
