@@ -1,0 +1,61 @@
+{
+  "version": 3,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 21,
+    "patch": 0
+  },
+  "configurePresets": [
+    {
+      "name": "vs2022-x64-debug",
+      "displayName": "VS 2022 x64 (Debug)",
+      "description": "Debug configuration for Visual Studio 2022 x64",
+      "generator": "Visual Studio 17 2022",
+      "architecture": {
+        "value": "x64",
+        "strategy": "set"
+      },
+      "binaryDir": "${sourceDir}/out/build/${presetName}",
+      "cacheVariables": {
+        "FILE_COLLECTOR_BUILD_TESTS": "ON"
+      }
+    },
+    {
+      "name": "vs2022-x64-release",
+      "displayName": "VS 2022 x64 (Release)",
+      "description": "Release configuration for Visual Studio 2022 x64",
+      "inherits": "vs2022-x64-debug",
+      "binaryDir": "${sourceDir}/out/build/${presetName}"
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "vs2022-x64-debug",
+      "displayName": "Build Debug",
+      "configurePreset": "vs2022-x64-debug",
+      "configuration": "Debug"
+    },
+    {
+      "name": "vs2022-x64-release",
+      "displayName": "Build Release",
+      "configurePreset": "vs2022-x64-release",
+      "configuration": "Release"
+    }
+  ],
+  "testPresets": [
+    {
+      "name": "vs2022-x64-debug",
+      "displayName": "Test Debug",
+      "configurePreset": "vs2022-x64-debug",
+      "configuration": "Debug",
+      "output": { "outputOnFailure": true }
+    },
+    {
+      "name": "vs2022-x64-release",
+      "displayName": "Test Release",
+      "configurePreset": "vs2022-x64-release",
+      "configuration": "Release",
+      "output": { "outputOnFailure": true }
+    }
+  ]
+}
