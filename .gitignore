@@ -71,7 +71,6 @@ Testing/*
 # FetchContent (GoogleTest и др.)
 _deps/
 lib/
-bin/
 share/
 
 
@@ -110,7 +109,6 @@ ARM/
 ARM64/
 build/
 bld/
-[Bb]in/
 [Oo]bj/
 [Ll]og/
 [Ll]ogs/
@@ -129,7 +127,6 @@ bld/
 *.so.*
 *.dylib
 *.dll
-*.exe
 *.out
 *.app
 *.i*86
