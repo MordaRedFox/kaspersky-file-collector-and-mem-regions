@@ -8,6 +8,9 @@
 
 ```bash
 .
+├── docs/
+│   └── technical_specifications.pdf
+│
 ├── FileCollector/
 │   ├── include/
 │   │   └── file_collector.h         // публичный API (FileCollector, FileSnapshot)
